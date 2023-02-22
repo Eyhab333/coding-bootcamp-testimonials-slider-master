@@ -69,6 +69,100 @@ ul {
 }
 
 /*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  body {
+    padding-top: 50px;
+  }
+  main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    position: relative;
+  }
+  main .text {
+    padding-top: 64px;
+  }
+  main .text .main-p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 44px;
+    color: #202047;
+    margin-bottom: 32px;
+    position: relative;
+  }
+  main .text .main-p::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 95px;
+    width: 120px;
+    height: 100px;
+    background-image: url(./images/pattern-quotes.svg);
+    background-repeat: no-repeat;
+  }
+  main .text .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .text .flex h1 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    color: #202047;
+    margin-right: 10px;
+  }
+  main .text .flex p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+    color: #b9b9ce;
+    margin-bottom: 0;
+  }
+  main .slide {
+    background-image: url(./images/pattern-bg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 32px;
+    padding: 30px 35px 24px 37px;
+    position: relative;
+  }
+  main .slide .image {
+    width: 100%;
+    background: #ebebeb;
+    box-shadow: 0px 40px 50px -30px rgba(36, 36, 113, 0.495001);
+    border-radius: 5px;
+  }
+  main .slide .next-and-previous-btns-container {
+    position: absolute;
+    bottom: 2px;
+    left: 127px;
+    width: 112px;
+    height: 56px;
+    background: #ffffff;
+    box-shadow: 0px 15px 20px -10px rgba(36, 36, 113, 0.0991313);
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .slide .next-and-previous-btns-container a {
+    color: #8585ac;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  footer {
+    margin-top: -54px;
+  }
+  footer img {
+    width: 285px;
+    height: 72px;
+  }
+}
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
   body {
